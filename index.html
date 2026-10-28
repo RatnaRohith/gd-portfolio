@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="GD-Projects — playable game development prototypes, gameplay controllers, and graybox level design.">
+  <title>GD-Projects — Prototype Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="GD-Projects home">
+      <span class="brand-mark">GD<span>+</span></span>
+      <span class="brand-copy"><strong>GD-PROJECTS</strong><small>PROTOTYPE LAB</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="mainNav">
+      <a href="#projects">Projects</a><a href="#capabilities">Capabilities</a><a href="#workflow">Workflow</a><a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Let's Connect <span>↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> INDEPENDENT GAME DEVELOPMENT PORTFOLIO</div>
+        <h1>BUILT TO<br><span>BE PLAYED.</span></h1>
+        <p class="hero-lede">Playable prototypes. Responsive controls. Worlds built from the blockout up.</p>
+        <p class="hero-text">GD-Projects is a collection of gameplay experiments exploring character controllers, vehicle handling, and level design across Godot, Unity, and Unreal Engine.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore projects <span>↓</span></a><a class="button button-quiet" href="#about">About the developer <span>↗</span></a></div>
+        <div class="hero-meta"><div><strong>03</strong><span>PLAYABLE PROTOTYPES</span></div><div><strong>08+</strong><span>CONTROLLER STUDIES</span></div><div><strong>03</strong><span>GAME ENGINES</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract sci-fi environment artwork">
+        <div class="art-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="planet"></div><div class="planet-ring"></div><div class="art-scan"></div>
+        <div class="art-label art-label-top"><span>GD / FIELD NOTES</span><span>01—03</span></div><div class="art-label art-label-bottom"><span>PROTOTYPE SERIES</span><span class="live-tag">● ACTIVE</span></div><div class="coordinates">17° 43' N<br>83° 18' E</div>
+      </div>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+    <section class="project-section section-shell" id="projects">
+      <div class="section-heading"><div><div class="eyebrow">01 / SELECTED WORK</div><h2>THE <span>PROJECTS</span></h2></div><p>Three playable sandboxes. Different movement systems, different spaces, one goal: make the gameplay feel right.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-space">
+          <div class="project-visual">
+            <img src="assets/images/space-adventure.jpg" alt="Space Adventure gameplay screenshot" onerror="this.style.display='none'">
+            <div class="visual-fallback"><span class="fallback-index">01</span><div class="fallback-planet"></div><div class="fallback-horizon"></div><span class="fallback-caption">FRONTIER / EXPLORATION</span></div>
+            <span class="project-type">SCI-FI / EXPLORATION</span><button class="expand-project" data-open="space" aria-label="View Space Adventure details">↗</button>
+          </div>
+          <div class="project-card-body"><div class="project-topline"><span>PROJECT 01</span><span class="project-status"><i></i> PLAYABLE BUILD</span></div><h3>Space Adventure</h3><p>Explore strange frontiers on foot and at the controls of a spacecraft.</p><div class="tag-row"><span>TPS</span><span>SPACESHIP</span><span>GRAYBOX</span></div><button class="text-link" data-open="space">Explore project <span>↗</span></button></div>
+        </article>
+        <article class="project-card project-capital">
+          <div class="project-visual">
+            <img src="assets/images/storm-the-capital.jpg" alt="Storm the Capital gameplay screenshot" onerror="this.style.display='none'">
+            <div class="visual-fallback"><span class="fallback-index">02</span><div class="city-silhouette"></div><div class="road-lines"></div><span class="fallback-caption">URBAN / TACTICAL</span></div>
+            <span class="project-type">TACTICAL / ACTION</span><button class="expand-project" data-open="capital" aria-label="View Storm the Capital details">↗</button>
+          </div>
+          <div class="project-card-body"><div class="project-topline"><span>PROJECT 02</span><span class="project-status"><i></i> PLAYABLE BUILD</span></div><h3>Storm the Capital</h3><p>Shift between combat perspectives, stealth routes, and vehicle traversal.</p><div class="tag-row"><span>TPS</span><span>FPS</span><span>VEHICLES</span></div><button class="text-link" data-open="capital">Explore project <span>↗</span></button></div>
+        </article>
+        <article class="project-card project-mnf">
+          <div class="project-visual">
+            <img src="assets/images/mnf-island.jpg" alt="MNF gameplay screenshot" onerror="this.style.display='none'">
+            <div class="visual-fallback"><span class="fallback-index">03</span><div class="island-shape"></div><div class="island-water"></div><span class="fallback-caption">ISLAND / MOVEMENT</span></div>
+            <span class="project-type">SURVIVAL / SANDBOX</span><button class="expand-project" data-open="mnf" aria-label="View MNF details">↗</button>
+          </div>
+          <div class="project-card-body"><div class="project-topline"><span>PROJECT 03</span><span class="project-status"><i></i> PLAYABLE BUILD</span></div><h3>MNF</h3><p>Experiment with multiple control perspectives in a compact island setting.</p><div class="tag-row"><span>TPS</span><span>TOP-DOWN</span><span>ANIMAL</span></div><button class="text-link" data-open="mnf">Explore project <span>↗</span></button></div>
+        </article>
+      </div>
+      <p class="asset-note"><span>ⓘ</span> Artwork panels are placeholders until you add your own screenshots in <code>assets/images/</code>.</p>
+    </section>
+    <section class="capabilities-section" id="capabilities"><div class="section-shell">
+      <div class="section-heading"><div><div class="eyebrow">02 / WHAT I BUILD</div><h2>GAMEPLAY <span>CAPABILITIES</span></h2></div><p>Prototype-first development focused on the interaction between controls, space, and player feedback.</p></div>
+      <div class="capability-grid">
+        <div class="capability"><span class="cap-number">01</span><div class="cap-icon">⌁</div><h3>Character Controllers</h3><p>Third-person and first-person movement, camera behavior, traversal, and perspective-specific control schemes.</p><div class="cap-line"></div></div>
+        <div class="capability"><span class="cap-number">02</span><div class="cap-icon">◎</div><h3>Vehicles & Creatures</h3><p>Spaceship handling, ground vehicles, and animal movement as distinct gameplay control problems.</p><div class="cap-line"></div></div>
+        <div class="capability"><span class="cap-number">03</span><div class="cap-icon">▦</div><h3>Graybox Level Design</h3><p>Rapid blockouts for spatial readability, route choices, navigation, stealth, racing, and exploration.</p><div class="cap-line"></div></div>
+        <div class="capability"><span class="cap-number">04</span><div class="cap-icon">⌘</div><h3>Iteration & Testing</h3><p>Playable builds, focused test passes, tuning, and documenting what works and what needs another iteration.</p><div class="cap-line"></div></div>
+      </div>
+    </div></section>
+    <section class="engine-section section-shell">
+      <div class="engine-copy"><div class="eyebrow">03 / DEVELOPMENT TOOLKIT</div><h2>THE ENGINE IS A TOOL.<br><span>THE FEEL IS THE GOAL.</span></h2><p>Godot, Unity, and Unreal Engine are represented as your toolkit. Update the engine listed on each project detail page to match the actual playable build.</p></div>
+      <div class="engine-list">
+        <div class="engine-item"><span class="engine-symbol godot-symbol">G</span><div><strong>Godot</strong><small>Rapid gameplay iteration</small></div><span class="engine-arrow">↗</span></div>
+        <div class="engine-item"><span class="engine-symbol unity-symbol">U</span><div><strong>Unity</strong><small>Cross-platform prototyping</small></div><span class="engine-arrow">↗</span></div>
+        <div class="engine-item"><span class="engine-symbol unreal-symbol">U</span><div><strong>Unreal Engine</strong><small>High-fidelity real-time worlds</small></div><span class="engine-arrow">↗</span></div>
+      </div>
+    </section>
+    <section class="workflow-section" id="workflow"><div class="section-shell">
+      <div class="section-heading"><div><div class="eyebrow">04 / HOW I WORK</div><h2>FROM BLOCKOUT <span>TO BUILD</span></h2></div><p>A simple loop: make the core interaction playable, test it in space, then refine the experience.</p></div>
+      <div class="workflow">
+        <div class="workflow-step"><span>01</span><div class="workflow-node">⌕</div><h3>Define</h3><p>Set the prototype goal, player fantasy, and success criteria.</p></div><div class="workflow-connector"></div>
+        <div class="workflow-step"><span>02</span><div class="workflow-node">⌗</div><h3>Blockout</h3><p>Build simple spaces to test scale, routes, and readability.</p></div><div class="workflow-connector"></div>
+        <div class="workflow-step"><span>03</span><div class="workflow-node">⌁</div><h3>Implement</h3><p>Develop the controller and core interaction loop.</p></div><div class="workflow-connector"></div>
+        <div class="workflow-step"><span>04</span><div class="workflow-node">↻</div><h3>Test & Tune</h3><p>Play, observe, adjust, and document the next iteration.</p></div>
+      </div>
+    </div></section>
+    <section class="about-section section-shell" id="about">
+      <div class="about-mark">GD<span>+</span></div>
+      <div class="about-copy"><div class="eyebrow">05 / THE DEVELOPER</div><h2>SMALL BUILDS.<br><span>BIG LEARNING.</span></h2><p>I'm a game developer building playable prototypes to strengthen my gameplay programming and level-design skills. These projects are practical testbeds for movement, camera systems, vehicle control, and spatial design.</p><p class="replace-note">Replace this introduction with your background, role, and career goals.</p></div>
+      <div class="about-facts"><div><span>FOCUS</span><strong>Gameplay & Level Design</strong></div><div><span>FORMAT</span><strong>Playable Prototypes</strong></div><div><span>ENGINES</span><strong>Godot · Unity · Unreal</strong></div></div>
+    </section>
+    <section class="contact-section" id="contact"><div class="section-shell contact-inner">
+      <div><div class="eyebrow">06 / OPEN CHANNEL</div><h2>HAVE A PROJECT<br><span>IN MIND?</span></h2><p>Interested in gameplay programming, prototyping, or level design? Let's talk.</p></div>
+      <div class="contact-actions"><a class="button button-primary" href="mailto:YOUR.EMAIL@example.com" data-placeholder-link>Email me <span>↗</span></a><a class="contact-link" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noreferrer" data-placeholder-link>GitHub <span>↗</span></a><a class="contact-link" href="https://www.linkedin.com/in/YOUR-PROFILE/" target="_blank" rel="noreferrer" data-placeholder-link>LinkedIn <span>↗</span></a><a class="contact-link" href="#" data-placeholder-link>Resume / CV <span>↗</span></a></div>
+    </div></section>
+  </main>
+  <footer class="site-footer section-shell"><a class="footer-brand" href="#home">GD-PROJECTS<span> / PROTOTYPE LAB</span></a><span>© <span id="year"></span> · Built around playable ideas.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-top"><span class="eyebrow">PROJECT FILE / <span id="dialogCode">01</span></span><button id="closeDialog" class="dialog-close" aria-label="Close project details">✕</button></div>
+    <div class="dialog-content">
+      <div class="dialog-visual" id="dialogVisual"><div class="dialog-visual-art"></div><span class="dialog-visual-label">PLAYABLE PROTOTYPE</span></div>
+      <div class="dialog-details"><div class="eyebrow" id="dialogGenre"></div><h2 id="dialogTitle">Project</h2><p id="dialogDescription"></p>
+        <div class="detail-block"><h3>CONTROLLER STUDIES</h3><div class="detail-tags" id="dialogControllers"></div></div>
+        <div class="detail-block"><h3>LEVEL DESIGN</h3><div class="detail-tags" id="dialogLevels"></div></div>
+        <div class="detail-block"><h3>ENGINE</h3><p id="dialogEngine"></p></div>
+        <div class="detail-block"><h3>DEVELOPMENT NOTES</h3><p id="dialogNotes"></p></div>
+        <div class="dialog-links"><a href="#" id="buildLink" class="button button-primary" data-placeholder-link>Gameplay build <span>↗</span></a><a href="#" id="sourceLink" class="button button-quiet" data-placeholder-link>Source code <span>↗</span></a><a href="#" id="videoLink" class="button button-quiet" data-placeholder-link>Gameplay video <span>↗</span></a></div>
+        <p class="dialog-hint">Replace the placeholder build, video, and source links with your real URLs before publishing.</p>
+      </div>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
