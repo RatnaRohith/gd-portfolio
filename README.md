@@ -14,11 +14,6 @@ A responsive dark sci-fi portfolio website built with plain HTML, CSS, and JavaS
 2. Open `index.html` in a modern browser.
 3. For local development, you can use VS Code with the Live Server extension.
 
-## Replace project screenshots
-Put your own screenshots in `assets/images/` with these exact filenames:
-- `space-adventure.jpg`
-- `storm-the-capital.jpg`
-- `mnf-island.jpg`
 
 Recommended: landscape 16:9 images, around 1600 × 900 pixels. The site has CSS-generated placeholder artwork until a real image is added.
 
